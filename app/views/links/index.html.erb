@@ -12,12 +12,12 @@
 
 <% @links.each do |link| %>
   <tr>
-    <td><%= link.url %></td>
-    <td><%= link.name %></td>
-    <td><%= link.saved %></td>
-    <td><%= link_to 'Show', link %></td>
-    <td><%= link_to 'Edit', edit_link_path(link) %></td>
-    <td><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td>&nbsp<%= link.url %></td>
+    <td>&nbsp<%= link.name %></td>
+    <td>&nbsp<%= link.saved %></td>
+    <td>&nbsp<%= link_to 'Show', link %></td>
+    <td>&nbsp<%= link_to 'Edit', edit_link_path(link) %></td>
+    <td>&nbsp<%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>

@@ -1,11 +1,19 @@
 require 'spec_helper'
 
 describe "FirstTests" do
-  describe "GET /first_tests" do
-    it "works! (now write some real specs)" do
-      # Run the generator again with the --webrat flag if you want to use webrat methods/matchers
-      get first_tests_index_path
-      response.status.should be(200)
+   describe "Links page" do
+
+    it "should have the content 'Listing links'" do
+        visit '/links'
+        page.should have_content('Listing links')
+    end
+  end
+  
+  describe "New link" do
+
+      it "should have the content 'New link'" do
+          visit '/links/new'
+          page.should have_content('New link')
     end
   end
 end

@@ -1,0 +1,12 @@
+Warning: $JAVA_HOME environment variable not set! Consider setting it.
+         Attempting to locate java...
+Found a virtual machine at: /usr/local/java/bin/java...
+9:21:39 AM [main] [error] JEditSwingTrayIcon: Unable to add Tray icon
+9:21:39 AM [main] [error] JEditSwingTrayIcon: java.awt.AWTException: TrayIcon couldn't be displayed.
+9:21:39 AM [main] [error] JEditSwingTrayIcon:  at sun.awt.X11.XTrayIconPeer.<init>(XTrayIconPeer.java:254)
+9:21:39 AM [main] [error] JEditSwingTrayIcon:  at sun.awt.X11.XToolkit.createTrayIcon(XToolkit.java:1144)
+9:21:39 AM [main] [error] JEditSwingTrayIcon:  at java.awt.TrayIcon.addNotify(TrayIcon.java:689)
+9:21:39 AM [main] [error] JEditSwingTrayIcon:  at java.awt.SystemTray.add(SystemTray.java:263)
+9:21:39 AM [main] [error] JEditSwingTrayIcon:  at org.gjt.sp.jedit.gui.tray.JTrayIconManager.addTrayIcon(JTrayIconManager.java:84)
+9:21:39 AM [main] [error] JEditSwingTrayIcon:  at org.gjt.sp.jedit.jEdit.propertiesChanged(jEdit.java:968)
+9:21:39 AM [main] [error] JEditSwingTrayIcon:  at org.gjt.sp.jedit.jEdit.main(jEdit.java:470)
